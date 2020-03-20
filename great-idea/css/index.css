@@ -313,7 +313,10 @@ section.services-facts ul {
 	}
 	section.link-section,
 	section.contact-section,
-	section.whoWeAre-section {
+	section.whoWeAre-section,
+	section.page-description,
+	section.services-section,
+	section.services-facts  {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
@@ -341,6 +344,9 @@ section.services-facts ul {
 	section.whoWeAre-section .headboard-list {
 		flex-wrap: wrap;
 		justify-content: space-around;
+	}
+	.service-page .header-text {
+		margin-top: 0;
 	}
 
   }
