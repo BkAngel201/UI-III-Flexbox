@@ -312,7 +312,8 @@ section.services-facts ul {
 	  width: 100%;
 	}
 	section.link-section,
-	section.contact-section {
+	section.contact-section,
+	section.whoWeAre-section {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
