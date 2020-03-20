@@ -267,3 +267,38 @@ footer {
 section.page-description {
 	margin: 30px 0 40px;
 }
+section.services-section {
+	justify-content: space-between;
+}
+section.services-section button {
+	background-color: white;
+	border: 1px solid #333;
+	font-size: .9rem;
+	text-align: center;
+	padding: 5px 0;
+	width: 150px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+section.services-section .service-box {
+	background: rgb(228, 228, 228);
+	border: 1px solid #333;
+	padding: 15px;
+	margin-bottom: 25px;
+	width: 48%;
+}
+section.services-facts {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+section.services-facts .text-description,
+section.services-facts img {
+	width: 48%;
+}
+section.services-facts ul {
+	margin-top: 15px;
+	padding-left: 20px;
+	list-style-type: square;
+}
