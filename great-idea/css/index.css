@@ -306,8 +306,15 @@ section.services-facts ul {
 @media only screen and (max-width: 962px) {
 	.container,
 	header .header-text,
-	header .header-img{
+	header .header-img,
+	section.link-section .links-twoSpaces,
+	section.link-section .links-threeSpaces {
 	  width: 100%;
+	}
+	section.link-section,
+	section.contact-section {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 	nav img {
 		display: none;
