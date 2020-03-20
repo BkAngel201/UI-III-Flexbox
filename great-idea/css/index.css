@@ -49,7 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -63,4 +63,297 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+.container {
+	width: 944px;
+	margin: 0px auto;
+}
+nav {
+	position: fixed;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	width: 944px;
+}
+nav ul {
+	display: flex;
+	width: 684px;
+	font-size: 0;
+	min-height: 38px;
+	margin-right: 60px;
+}
+nav li {
+	display: flex;
+	vertical-align: middle;
+	width: 114px;
+	font-size: 16px;
+	height: 100%;
+}
+nav li a {
+	position: relative;
+	font-family: 'Signika', sans-serif;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0;
+	color: #666;
+	text-decoration: none;
+	transition: all .3s;
+}
+nav li:hover a {
+	letter-spacing: 1px;
+}
+nav li a::before {
+	content: '';
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transform: scale(0.1,1);
+	-webkit-transform: scale(0.1,1);
+	-moz-transform: scale(0.1,1);
+}
+nav li a::after {
+	content: '';
+	position: absolute;
+	opacity: .3;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #cecece;
+	z-index: -1;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+}
+nav li a:hover::after {
+	opacity: 0;
+	transform: scale(0.1,1);
+	-webkit-transform: scale(0.1,1);
+	-moz-transform: scale(0.1,1);
+}
+nav li a:hover::before {
+	opacity: 1;
+	transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	-moz-transform: scale(1,1);
+}
+nav img {
+	display: flex;
+	width: 196px;
+	vertical-align: middle;
+}
+header {
+	display: flex;
+	margin-bottom: 80px;
+}
+header .header-text,
+header .header-img {
+	margin-top: 90px;
+	display: flex;
+	vertical-align: middle;
+	text-align: center;
+}
+header .header-text {
+	width: 540px;
+	flex-direction: column;
+	justify-content: center;
+}
+header .header-img {
+	width: 380px;
+	height: 380px;
+	background: url('../img/header-img.png') no-repeat center;
+}
+h1 {
+	font-size: 5rem;
+}
+h3 {
+	font-size: 1.5rem;
+}
+header button {
+	width: 300px;
+	background: none;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.15rem;
+	border: 1px solid #333;
+	padding: 0 50px;
+	margin: 5px auto 0;
+}
+
+section.link-section,
+section.services-section {
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 35px 0;
+	margin-bottom: 35px;
+}
+section.link-section .links-twoSpaces {
+	width: 468px;
+}
+section.link-section .links-threeSpaces {
+	width: 312px;
+	padding-right: 15px;
+}
+section.link-section .img-divider {
+	content: '';
+	width: 100%;
+	height: 196px;
+	background: url('../img/mid-page-accent.jpg');
+	margin: 30px 0;
+}
+section.link-section .img-divider .middle-img {
+	width: 100%;
+}
+section.whoWeAre-section p {
+	margin-bottom: 15px;
+}
+section.whoWeAre-section {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 35px 0;
+	margin-bottom: 35px;
+}
+section.whoWeAre-section .headboard-list {
+	display: flex;
+}
+section.whoWeAre-section .headboard-list .directive {
+	width: 231px;
+	text-align: center;
+}
+section.whoWeAre-section .headboard-list .directive img{
+	width: 180px;
+	margin-bottom: 10px;
+}
+section.whoWeAre-section .headboard-list .directive .position{
+	font-weight: 700;
+	margin-top: -10px;
+}
+section.contact-section p {
+	margin-bottom: 18px;
+}
+footer {
+	padding: 40px 0 25px;
+	text-align: center;
+}
+.margin-0 {
+	margin: 0;
+}
+.about-page .header-text {
+	margin: 0;
+	height: 380px;
+	vertical-align: middle;
+	width: 100% !important;
+	background: url('https://i.pinimg.com/564x/5f/a9/03/5fa903317fb31647020677537eac5fa7.jpg') no-repeat center;
+	background-size: cover;
+}
+.about-page .header-text h1 {
+	padding-top: 130px;
+}
+
+.service-page .header-text {
+	width: 100%;
+	margin-top: 38px;
+}
+section.page-description {
+	margin: 30px 0 40px;
+}
+section.services-section {
+	justify-content: space-between;
+}
+section.services-section button {
+	background-color: white;
+	border: 1px solid #333;
+	font-size: .9rem;
+	text-align: center;
+	padding: 5px 0;
+	width: 150px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+section.services-section .service-box {
+	background: rgb(228, 228, 228);
+	border: 1px solid #333;
+	padding: 15px;
+	margin-bottom: 25px;
+	width: 48%;
+}
+section.services-facts {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+section.services-facts .text-description,
+section.services-facts img {
+	width: 48%;
+}
+section.services-facts ul {
+	margin-top: 15px;
+	padding-left: 20px;
+	list-style-type: square;
+}
+
+@media only screen and (max-width: 962px) {
+	.container,
+	header .header-text,
+	header .header-img,
+	section.link-section .links-twoSpaces,
+	section.link-section .links-threeSpaces,
+	section.services-section .service-box,
+	section.services-facts .text-description,
+	section.services-facts img {
+	  width: 100%;
+	}
+	section.link-section,
+	section.contact-section,
+	section.whoWeAre-section,
+	section.page-description,
+	section.services-section,
+	section.services-facts  {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	nav img {
+		display: none;
+	}
+	header,
+	section.services-facts {
+		flex-flow: column;
+	}
+	nav {
+		width: 100%;
+		position: relative;
+	}
+	nav ul {
+		width: 100%;
+		flex-flow: column;
+		margin: 0;
+	}
+	nav ul li {
+		width: 100%;
+	}
+	nav li a::after {
+		z-index: 1;
+	}
+	section.whoWeAre-section .headboard-list {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.service-page .header-text {
+		margin-top: 0;
+	}
+	section.services-facts .text-description {
+		margin-bottom: 30px;
+	}
+
+  }
