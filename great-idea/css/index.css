@@ -338,5 +338,9 @@ section.services-facts ul {
 	nav li a::after {
 		z-index: 1;
 	}
+	section.whoWeAre-section .headboard-list {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
 
   }
