@@ -308,7 +308,10 @@ section.services-facts ul {
 	header .header-text,
 	header .header-img,
 	section.link-section .links-twoSpaces,
-	section.link-section .links-threeSpaces {
+	section.link-section .links-threeSpaces,
+	section.services-section .service-box,
+	section.services-facts .text-description,
+	section.services-facts img {
 	  width: 100%;
 	}
 	section.link-section,
@@ -323,7 +326,8 @@ section.services-facts ul {
 	nav img {
 		display: none;
 	}
-	header {
+	header,
+	section.services-facts {
 		flex-flow: column;
 	}
 	nav {
@@ -347,6 +351,9 @@ section.services-facts ul {
 	}
 	.service-page .header-text {
 		margin-top: 0;
+	}
+	section.services-facts .text-description {
+		margin-bottom: 30px;
 	}
 
   }
